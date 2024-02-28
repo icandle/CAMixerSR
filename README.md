@@ -1,2 +1,3 @@
-# CAMixerSR
-CAMixerSR: Only Details Need More “Attention” (CVPR2024)
+## <div align="center"> <i>CAMixerSR</i>: Only Details Need More “Attention” </div>
+---
+Coming soon!
