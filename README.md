@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/badge/license-Apache--2.0-%23B7A800" /></a>
 </p>
 
-**Overview:** We propose ***CAMixerSR***, a new approach integrating *content-aware accelerating framework* and *token mixer design*, to pursue more efficient SR inference via assigning convolution for simple regions but window-attention for complex textures. It exhibits excellent generality and attains competitive results among state-of-the-art models with better complexity-performance trade-offs on large-image SR, lightweight SR, and omnidirectional-image SR.
+>**Overview:** We propose ***CAMixerSR***, a new approach integrating *content-aware accelerating framework* and *token mixer design*, to pursue more efficient SR inference via assigning convolution for simple regions but window-attention for complex textures. It exhibits excellent generality and attains competitive results among state-of-the-art models with better complexity-performance trade-offs on large-image SR, lightweight SR, and omnidirectional-image SR.
 
 <p align="center">
 <img src="./figures/CAMixer.png" width=100% height=100% 
@@ -18,4 +18,4 @@ This repository contains [PyTorch](https://pytorch.org/) implementation for ***C
 
 ---
 
-Coming soon!
+Coming soon! We are focusing on ECCV and NTIRE, and planning to release implementations of CAMixerSR in a few months.
