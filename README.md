@@ -9,7 +9,12 @@
 
 **Overview:** We propose ***CAMixerSR***, a new approach integrating *content-aware accelerating framework* and *token mixer design*, to pursue more efficient SR inference via assigning convolution for simple regions but window-attention for complex textures. It exhibits excellent generality and attains competitive results among state-of-the-art models with better complexity-performance trade-offs on large-image SR, lightweight SR, and omnidirectional-image SR.
 
-This repository contains PyTorch implementation for CAMixerSR (CVPR 2024).
+<p align="center">
+<img src="./figures/CAMixer.png" width=100% height=100% 
+class="center">
+</p>
+
+This repository contains [PyTorch](https://pytorch.org/) implementation for ***CAMixerSR*** (CVPR 2024).
 
 ---
 
