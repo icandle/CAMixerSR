@@ -1,0 +1,110 @@
+name: CAMixerSR_x4
+model_type: SRModel
+scale: 4
+num_gpu: 4
+manual_seed: 0
+
+# dataset and data loader settings
+datasets:
+  train:
+    name: DIV2K
+    type: PairedImageDataset
+    dataroot_gt: /mnt/bn/mmlab-wangyan-srdata/DIV2K/DIV2K_train_HR_sub
+    dataroot_lq: /mnt/bn/mmlab-wangyan-srdata/DIV2K/DIV2K_train_LR_bicubic/X4_sub
+    meta_info_file: /mnt/bn/mmlab-wangyan-srdata/DIV2K/meta_info_DIV2K800sub_GT.txt
+    io_backend:
+      type: disk
+
+    gt_size: 256
+    use_hflip: true
+    use_rot: true
+
+    # data loader
+    use_shuffle: true
+    num_worker_per_gpu: 8
+    batch_size_per_gpu: 16
+    dataset_enlarge_ratio: 64
+    prefetch_mode: ~
+
+  val_1:
+    name: B100
+    type: PairedImageDataset
+    dataroot_gt: /mnt/bn/mmlab-wangyan-srdata/Benchmarks/SR/HR/B100/x4
+    dataroot_lq: /mnt/bn/mmlab-wangyan-srdata/Benchmarks/SR/LR/LRBI/B100/x4
+    io_backend:
+      type: disk
+
+  val_2:
+    name: Urban100
+    type: PairedImageDataset
+    dataroot_gt: /mnt/bn/mmlab-wangyan-srdata/Benchmarks/SR/HR/Urban100/x4
+    dataroot_lq: /mnt/bn/mmlab-wangyan-srdata/Benchmarks/SR/LR/LRBI/Urban100/x4
+    io_backend:
+      type: disk
+
+# network structures
+network_g:
+  type: CAMixerSR
+  ratio: 0.5
+  scale: 4
+
+# path
+path:
+  pretrain_network_g: ~ 
+  strict_load_g: true
+  resume_state: ~
+
+# training settings
+train:
+  ema_decay: 0.999
+  optim_g:
+    type: AdamW
+    lr: !!float 5e-4
+    weight_decay: !!float 1e-4
+    betas: [0.9, 0.99]
+
+  scheduler:
+    type: MultiStepLR
+    milestones: [250000, 400000, 450000, 475000]
+    gamma: 0.5
+
+  total_iter: 500000
+
+  warmup_iter: -1  # no warm up
+
+  # losses
+  pixel_opt:
+    type: L1Loss
+    loss_weight: 1.0
+    reduction: mean
+
+# validation settings
+val:
+  val_freq: !!float 2.5e3
+  save_img: false
+  pbar: False
+
+  metrics:
+    psnr:
+      type: calculate_psnr
+      crop_border: 4
+      test_y_channel: true
+      better: higher  # the higher, the better. Default: higher
+    ssim:
+      type: calculate_ssim
+      crop_border: 4
+      test_y_channel: true
+      better: higher  # the higher, the better. Default: higher
+
+# logging settings
+logger:
+  print_freq: 100
+  save_checkpoint_freq: !!float 5e3
+  use_tb_logger: true
+  wandb:
+    project: ~
+    resume_id: ~
+
+# dist training settings
+dist_params:
+  backend: nccl
