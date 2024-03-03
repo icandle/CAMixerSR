@@ -11,7 +11,7 @@ __all__ = ['calculate_psnr', 'calculate_ssim', 'calculate_niqe']
 
 loss_folder = osp.dirname(osp.abspath(__file__))
 loss_filenames = [osp.splitext(osp.basename(v))[0] for v in scandir(loss_folder) if v.endswith('_metric.py')]
-_model_modules = [importlib.import_module(f'odisr.metrics.{file_name}') for file_name in loss_filenames]
+_model_modules = [importlib.import_module(f'metrics.{file_name}') for file_name in loss_filenames]
 
 
 def calculate_metric(data, opt):

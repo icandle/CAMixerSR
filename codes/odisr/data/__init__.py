@@ -19,7 +19,7 @@ __all__ = ['build_dataset', 'build_dataloader']
 data_folder = osp.dirname(osp.abspath(__file__))
 dataset_filenames = [osp.splitext(osp.basename(v))[0] for v in scandir(data_folder) if v.endswith('_dataset.py')]
 # import all the dataset modules
-_dataset_modules = [importlib.import_module(f'odisr.data.{file_name}') for file_name in dataset_filenames]
+_dataset_modules = [importlib.import_module(f'data.{file_name}') for file_name in dataset_filenames]
 
 
 def build_dataset(dataset_opt):
