@@ -2,6 +2,7 @@
 import os.path as osp
 
 import archs
+import models
 
 from basicsr.test import test_pipeline
 
