@@ -1,0 +1,122 @@
+# python test.py -opt options/test_x4.yml
+name: CAMixerSR_035_x4
+model_type: SRModel
+scale: 4
+num_gpu: 1  # set num_gpu: 0 for cpu mode
+manual_seed: 0
+
+datasets:
+  # test_00: 
+  #   name: Test2K
+  #   type: PairedImageDataset
+  #   dataroot_gt: C:/Z_Document/dataset/test2k/test2k/HR/X4
+  #   dataroot_lq: C:/Z_Document/dataset/test2k/test2k/LR/X4
+  #   io_backend:
+  #     type: disk
+
+  # test_01:  # the 1st test dataset
+  #   name: DIV2K100
+  #   type: PairedImageDataset
+  #   dataroot_gt: C:/Z_Document/dataset/DIV2K/DIV2K_valid_HR
+  #   dataroot_lq: C:/Z_Document/dataset/DIV2K/DIV2K_valid_LR_bicubic/X4
+  #   io_backend:
+  #     type: disk
+      
+  test_1:  # the 1st test dataset
+    name: Set5
+    type: PairedImageDataset
+    dataroot_gt: C:/Z_Document/dataset/ClassicSR/HR/Set5/x4
+    dataroot_lq: C:/Z_Document/dataset/ClassicSR/LR/LRBI/Set5/x4
+    io_backend:
+      type: disk
+
+  test_2:  # the 1st test dataset
+    name: Set14
+    type: PairedImageDataset
+    dataroot_gt: C:/Z_Document/dataset/ClassicSR/HR/Set14/x4
+    dataroot_lq: C:/Z_Document/dataset/ClassicSR/LR/LRBI/Set14/x4
+    io_backend:
+      type: disk
+
+  test_3:  # the 1st test dataset
+    name: B100
+    type: PairedImageDataset
+    dataroot_gt: C:/Z_Document/dataset/ClassicSR/HR/B100/x4
+    dataroot_lq: C:/Z_Document/dataset/ClassicSR/LR/LRBI/B100/x4
+    io_backend:
+      type: disk
+
+  test_4:  # the 1st test dataset
+    name: Urban100
+    type: PairedImageDataset
+    dataroot_gt: C:/Z_Document/dataset/ClassicSR/HR/Urban100/x4
+    dataroot_lq: C:/Z_Document/dataset/ClassicSR/LR/LRBI/Urban100/x4
+    io_backend:
+      type: disk
+
+  test_5:  # the 1st test dataset
+    name: Manga109
+    type: PairedImageDataset
+    dataroot_gt: C:/Z_Document/dataset/ClassicSR/HR/Manga109/x4
+    dataroot_lq: C:/Z_Document/dataset/ClassicSR/LR/LRBI/Manga109/x4
+    io_backend:
+      type: disk
+
+# network structures
+network_g:
+  type: CAMixerSR
+  ratio: 0.35
+  # type: PlainUSR_general
+  # n_feat: 48
+  # im_feat: [48,32,16]
+  # attn_feat: 8
+  # attn: LIA5
+  # conv: Conv
+  scale: 4
+  # type: DDistill_SR_Inference
+  # type: PlainUSR_large_inference
+  # n_feat: 80
+  # im_feat: [80,64,48]
+  # attn_feat: 16
+  # type: PlainUSR_ultra_inference
+  # n_feat: 32
+  # im_feat: [32,16]
+  # attn_feat: 1
+
+
+# path
+path:
+  pretrain_network_g: ../pretrained_models/CAMixerSRx4.pth
+  #model_zoo/PlainUSRL_Rep_x4.pth
+  #model_zoo/IMDN.pth
+  #model_zoo/pceva_l_x4.pth
+  #C:/Z_Develop/Dev_ImageSR/model_zoo/PlainUNet_L2Loss_Prune_1e-2.pth
+  #C:/Z_Develop/Dev_ImageSR/model_zoo/FDSR_Large_RealSR.pth
+  #C:/Z_Develop/FDSR/FDSR/FDSR/pretrained_models/Ablation/Others/Conv_Basex4.pth
+  #C:/Z_Develop/FDSR/FDSR/FDSR/pretrained_models/SR/FDSR_Conv2_N10_x4.pth
+  #C:/Z_Develop/FDSR/FDSR/FDSR/pretrained_models/Ablation/Operator/FFT.pth
+  strict_load_g: true
+  param_key_g: 'params_ema' #'state_dict'  #~ #'params_ema' # only for MAN, for MAN-T and MAN-L, using ~ 
+
+# validation settings
+val:
+  save_img: true
+  suffix: ~  # add suffix to saved images, if None, use exp name
+
+  metrics:
+    psnr_y: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 4
+      test_y_channel: true
+    ssim_y:
+      type: calculate_ssim
+      crop_border: 4
+      test_y_channel: true  
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 4
+      test_y_channel: false
+    ssim:
+      type: calculate_ssim
+      crop_border: 4
+      test_y_channel: false

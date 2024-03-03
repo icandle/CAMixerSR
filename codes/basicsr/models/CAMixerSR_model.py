@@ -10,7 +10,7 @@ from tqdm import tqdm
 from os import path as osp
 
 @MODEL_REGISTRY.register()
-classCAModel(SRModel):
+class CAModel(SRModel):
 
     def get_optimizer(self, optim_type, params, lr, **kwargs):
         if optim_type == 'Adam':
