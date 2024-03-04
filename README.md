@@ -21,3 +21,15 @@ This repository contains [PyTorch](https://pytorch.org/) implementation for ***C
 ---
 
 Coming soon! We are focusing on ECCV and NTIRE, and planning to release implementations of CAMixerSR in a few months.
+
+---
+### Citation
+```
+@article{wang2024camixersr,
+  title={CAMixerSR: Only Details Need More "Attention"},
+  author={Wang, Yan and Zhao, Shijie and Liu, Yi and Li, Junlin and Zhang, Li},
+  journal={arXiv preprint arXiv:2402.19289},
+  year={2024}
+}
+```
+
