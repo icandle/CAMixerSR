@@ -19,14 +19,13 @@ class="center">
 This repository contains [PyTorch](https://pytorch.org/) implementation for ***CAMixerSR*** (CVPR 2024).
 
 ---
-
-Coming soon! We are focusing on ECCV and NTIRE, and planning to release implementations of CAMixerSR in a few months.
+The main codes and pre-trained models have been uploaded. We are planning to replenish the README of CAMixerSR in a few weeks.
 
 ---
 ### Citation
 ```
 @article{wang2024camixersr,
-  title={CAMixerSR: Only Details Need More "Attention"},
+  title={CAMixerSR: Only Details Need More ``Attention"},
   author={Wang, Yan and Zhao, Shijie and Liu, Yi and Li, Junlin and Zhang, Li},
   journal={arXiv preprint arXiv:2402.19289},
   year={2024}
