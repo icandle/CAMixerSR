@@ -41,13 +41,13 @@ pip install -r requirements.txt
 
 *Training*: [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/).
 
-*Testing*: [F2K](https://drive.google.com/file/d/1jubeKExUrUE-VKpiTx9AAUVodJZvdkBC/view?usp=drive_link), [Test2K](https://drive.google.com/file/d/1HQtKhWrVSrUNh0bcka57BlhbZWCCB649/view?usp=drive_link), [Test4K](https://drive.google.com/file/d/1yBCRPHzcNzSX6xLsgFjgJuRlcVJWA4ZD/view?usp=sharing), [Test8K](https://drive.google.com/file/d/1CXVF61888zQRP8gkPGoX5LFD9IBcV-Sl/view?usp=drive_link) ([Google Drive](https://drive.google.com/drive/folders/1wSdB9GUa2IsYe5S8pHV-7d8dYdZA2wDp?usp=drive_link)/Baidu Netdisk).
+*Testing*: [F2K](https://drive.google.com/file/d/1jubeKExUrUE-VKpiTx9AAUVodJZvdkBC/view?usp=drive_link), [Test2K](https://drive.google.com/file/d/1HQtKhWrVSrUNh0bcka57BlhbZWCCB649/view?usp=drive_link), [Test4K](https://drive.google.com/file/d/1yBCRPHzcNzSX6xLsgFjgJuRlcVJWA4ZD/view?usp=sharing), [Test8K](https://drive.google.com/file/d/1CXVF61888zQRP8gkPGoX5LFD9IBcV-Sl/view?usp=drive_link) ([Google Drive](https://drive.google.com/drive/folders/1wSdB9GUa2IsYe5S8pHV-7d8dYdZA2wDp?usp=drive_link)/[Baidu Netdisk](https://pan.baidu.com/s/1IR90NxGRPajQLw9nFDflyA?pwd=nbjl)).
 
 #### Lightweight SR
 
 *Training*: [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) or [DF2K](https://openmmlab.medium.com/awesome-datasets-for-super-resolution-introduction-and-pre-processing-55f8501f8b18).
 
-*Testing*: Set5, Set14, BSD100, Urban100, Manga109 ([Google Drive](https://drive.google.com/file/d/1SbdbpUZwWYDIEhvxQQaRsokySkcYJ8dq/view?usp=sharing)/Baidu Netdisk).
+*Testing*: Set5, Set14, BSD100, Urban100, Manga109 ([Google Drive](https://drive.google.com/file/d/1SbdbpUZwWYDIEhvxQQaRsokySkcYJ8dq/view?usp=sharing)/[Baidu Netdisk](https://pan.baidu.com/s/1zfmkFK3liwNpW4NtPnWbrw?pwd=nbjl)).
 
 #### Omni-Directional-Image SR
 
@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 ▶️ How to Test
 ---
-Clone this repository and change directory to `./codes`
+Clone this repository and change the directory to `./codes`
 ```
 git clone https://github.com/icandle/CAMixerSR.git
 cd codes
