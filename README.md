@@ -24,7 +24,7 @@ The main codes and pre-trained models have been uploaded. We are planning to rep
  
 Requirements
 ---
-- [PyTorch >= 1.8](https://pytorch.org/) 
+- [PyTorch >= 1.7](https://pytorch.org/) 
 - [BasicSR == 1.4.2](https://github.com/XPixelGroup/BasicSR/blob/master/INSTALL.md)
 - [einops](https://github.com/arogozhnikov/einops)
   
@@ -38,19 +38,32 @@ Datasets
 ---
 #### Large-Image SR
 
-&emsp;*Training*: [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/).
+*Training*: [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/).
 
-&emsp;*Testing*: [F2K](https://drive.google.com/file/d/1jubeKExUrUE-VKpiTx9AAUVodJZvdkBC/view?usp=drive_link), [Test2K](https://drive.google.com/file/d/1HQtKhWrVSrUNh0bcka57BlhbZWCCB649/view?usp=drive_link), [Test4K](https://drive.google.com/file/d/1yBCRPHzcNzSX6xLsgFjgJuRlcVJWA4ZD/view?usp=sharing), [Test8K](https://drive.google.com/file/d/1CXVF61888zQRP8gkPGoX5LFD9IBcV-Sl/view?usp=drive_link) ([Google Drive](https://drive.google.com/drive/folders/1wSdB9GUa2IsYe5S8pHV-7d8dYdZA2wDp?usp=drive_link)/Baidu Netdisk).
+*Testing*: [F2K](https://drive.google.com/file/d/1jubeKExUrUE-VKpiTx9AAUVodJZvdkBC/view?usp=drive_link), [Test2K](https://drive.google.com/file/d/1HQtKhWrVSrUNh0bcka57BlhbZWCCB649/view?usp=drive_link), [Test4K](https://drive.google.com/file/d/1yBCRPHzcNzSX6xLsgFjgJuRlcVJWA4ZD/view?usp=sharing), [Test8K](https://drive.google.com/file/d/1CXVF61888zQRP8gkPGoX5LFD9IBcV-Sl/view?usp=drive_link) ([Google Drive](https://drive.google.com/drive/folders/1wSdB9GUa2IsYe5S8pHV-7d8dYdZA2wDp?usp=drive_link)/Baidu Netdisk).
 
 #### Lightweight SR
 
-&emsp;*Training*: [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) or [DF2K](https://openmmlab.medium.com/awesome-datasets-for-super-resolution-introduction-and-pre-processing-55f8501f8b18).
+*Training*: [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) or [DF2K](https://openmmlab.medium.com/awesome-datasets-for-super-resolution-introduction-and-pre-processing-55f8501f8b18).
 
-&emsp;*Testing*: Set5, Set14, BSD100, Urban100, Manga109 (Download at [Google Drive](https://drive.google.com/file/d/1SbdbpUZwWYDIEhvxQQaRsokySkcYJ8dq/view?usp=sharing)/Baidu Netdisk).
+*Testing*: Set5, Set14, BSD100, Urban100, Manga109 ([Google Drive](https://drive.google.com/file/d/1SbdbpUZwWYDIEhvxQQaRsokySkcYJ8dq/view?usp=sharing)/Baidu Netdisk).
 
 #### Omni-Directional-Image SR
 
-&emsp;*Training*: [lau dataset](https://drive.google.com/file/d/1FjEzVh7-0swloClKCVnctUS8Wmlz3Ibv/view?usp=drive_link).
+*Training*: [lau dataset](https://drive.google.com/file/d/1FjEzVh7-0swloClKCVnctUS8Wmlz3Ibv/view?usp=drive_link).
+
+How to Test
+---
+Clone this repository and change directory to `./codes`
+```
+git clone https://github.com/icandle/CAMixerSR.git
+cd codes
+```
+#### Lightweight SR
+*Testing*: Change the dataset path of [example option](https://github.com/icandle/CAMixerSR/blob/main/codes/options/test/test_x4.yml) to your datasets and test with the command:
+```
+python basicsr/test.py -opt ../options/test/test_x4.yml
+```
 
 Acknowledgments
 ---
