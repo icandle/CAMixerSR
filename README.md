@@ -24,11 +24,12 @@ The main codes and pre-trained models have been uploaded. We are planning to rep
  
 Requirements
 ---
+  
+#### Dependencies
 - [PyTorch >= 1.7](https://pytorch.org/) 
 - [BasicSR == 1.4.2](https://github.com/XPixelGroup/BasicSR/blob/master/INSTALL.md)
 - [einops](https://github.com/arogozhnikov/einops)
-  
-### Installation
+#### Installation
 ```
 pip install -r requirements.txt
 ```
