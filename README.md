@@ -22,7 +22,7 @@ This repository contains [PyTorch](https://pytorch.org/) implementation for ***C
 
 The main codes and pre-trained models have been uploaded. We are planning to replenish the README of CAMixerSR in a few weeks.
  
-Requirements
+⚙️ Requirements
 ---
   
 #### Dependencies
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ```
 
 
-Datasets
+🎈 Datasets
 ---
 #### Large-Image SR
 
@@ -53,7 +53,7 @@ Datasets
 
 *Training*: [lau dataset](https://drive.google.com/file/d/1FjEzVh7-0swloClKCVnctUS8Wmlz3Ibv/view?usp=drive_link).
 
-How to Test
+▶️ How to Test
 ---
 Clone this repository and change directory to `./codes`
 ```
@@ -66,11 +66,11 @@ cd codes
 python basicsr/test.py -opt ../options/test/test_x4.yml
 ```
 
-Acknowledgments
+💖 Acknowledgments
 ---
 We would thank *[BasicSR](https://github.com/XPixelGroup/BasicSR)*, *[ClassSR](https://github.com/XPixelGroup/ClassSR)*, and *[OSRT](https://github.com/Fanghua-Yu/OSRT)* for their enlightening work!
 
-Citation
+🎓 Citation
 ---
 ```
 @article{wang2024camixersr,
