@@ -19,14 +19,49 @@ class="center">
 This repository contains [PyTorch](https://pytorch.org/) implementation for ***CAMixerSR*** (CVPR 2024).
 
 ---
-The main codes and pre-trained models have been uploaded. We are planning to replenish the README of CAMixerSR in a few weeks.
 
+The main codes and pre-trained models have been uploaded. We are planning to replenish the README of CAMixerSR in a few weeks.
+ 
+Requirements
 ---
-### Citation
+- [PyTorch >= 1.8](https://pytorch.org/) 
+- [BasicSR == 1.4.2](https://github.com/XPixelGroup/BasicSR/blob/master/INSTALL.md)
+- [einops](https://github.com/arogozhnikov/einops)
+  
+### Installation
+```
+pip install -r requirements.txt
+```
+
+
+Datasets
+---
+#### Large-Image SR
+
+&emsp;*Training*: [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/).
+
+&emsp;*Testing*: [F2K](https://drive.google.com/file/d/1jubeKExUrUE-VKpiTx9AAUVodJZvdkBC/view?usp=drive_link), [Test2K](https://drive.google.com/file/d/1HQtKhWrVSrUNh0bcka57BlhbZWCCB649/view?usp=drive_link), [Test4K](https://drive.google.com/file/d/1yBCRPHzcNzSX6xLsgFjgJuRlcVJWA4ZD/view?usp=sharing), [Test8K](https://drive.google.com/file/d/1CXVF61888zQRP8gkPGoX5LFD9IBcV-Sl/view?usp=drive_link) ([Google Drive](https://drive.google.com/drive/folders/1wSdB9GUa2IsYe5S8pHV-7d8dYdZA2wDp?usp=drive_link)/Baidu Netdisk).
+
+#### Lightweight SR
+
+&emsp;*Training*: [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) or [DF2K](https://openmmlab.medium.com/awesome-datasets-for-super-resolution-introduction-and-pre-processing-55f8501f8b18).
+
+&emsp;*Testing*: Set5, Set14, BSD100, Urban100, Manga109 (Download at [Google Drive](https://drive.google.com/file/d/1SbdbpUZwWYDIEhvxQQaRsokySkcYJ8dq/view?usp=sharing)/Baidu Netdisk).
+
+#### Omni-Directional-Image SR
+
+&emsp;*Training*: [lau dataset](https://drive.google.com/file/d/1FjEzVh7-0swloClKCVnctUS8Wmlz3Ibv/view?usp=drive_link).
+
+Acknowledgments
+---
+We would thank *[BasicSR](https://github.com/XPixelGroup/BasicSR)*, *[ClassSR](https://github.com/XPixelGroup/ClassSR)*, and *[OSRT](https://github.com/Fanghua-Yu/OSRT)* for their enlightening work!
+
+Citation
+---
 ```
 @article{wang2024camixersr,
   title={CAMixerSR: Only Details Need More ``Attention"},
-  author={Wang, Yan and Zhao, Shijie and Liu, Yi and Li, Junlin and Zhang, Li},
+  author={Wang, Yan and Liu, Yi and Zhao, Shijie and Li, Junlin and Zhang, Li},
   journal={arXiv preprint arXiv:2402.19289},
   year={2024}
 }
