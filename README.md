@@ -93,7 +93,7 @@ python basicsr/test.py -opt options/test/test_x4.yml
 <summary>Visual comparison (click me)</summary>
 <p align="left">
     
-[<img src="./figures/visual.png" width=80% height=80% 
+[<img src="./figures/visual.png" width=100% height=100% 
 class="left">](https://imgsli.com/MjUyMzE3)
 
 </p>
@@ -103,7 +103,7 @@ class="left">](https://imgsli.com/MjUyMzE3)
 <summary>Large-Image SR </summary>
 <p align="left">
     
-<img src="./figures/LargeSR_table.png" width=80% height=80% 
+<img src="./figures/LargeSR_table.png" width=100% height=100% 
 class="left">
 
 </p>
@@ -113,7 +113,7 @@ class="left">
 <summary>Lightweight SR </summary>
 <p align="left">
 
-<img src="./figures/LightSR_table.png" width=80% height=80% 
+<img src="./figures/LightSR_table.png" width=100% height=100% 
 class="left">
 
 </p>
@@ -123,7 +123,7 @@ class="left">
 <summary>Omni-Directional-Image SR </summary>
 <p align="left">
 
-<img src="./figures/ODISR_table.png" width=80% height=80% 
+<img src="./figures/ODISR_table.png" width=100% height=100% 
 class="left">
 
 </p>
