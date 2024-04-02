@@ -60,11 +60,29 @@ Clone this repository and change the directory to `./codes`
 git clone https://github.com/icandle/CAMixerSR.git
 cd codes
 ```
+#### Large-Image SR
+*Testing*: Change the dataset path of [example option](https://github.com/icandle/CAMixerSR/blob/main/codes/options/test/test_2K.yml) to your datasets and test with the command:
+```
+# 2K
+python basicsr/test.py -opt ../options/test/test_2K.yml
+# 4K/8K
+python basicsr/test.py -opt ../options/test/test_8K.yml
+```
+*Note*: We use [TileModel](https://github.com/icandle/CAMixerSR/blob/main/codes/basicsr/models/Tile_model.py) with *Tile* 64x64 and *Overlap* 4 to constrain the calculations.
+
 #### Lightweight SR
 *Testing*: Change the dataset path of [example option](https://github.com/icandle/CAMixerSR/blob/main/codes/options/test/test_x4.yml) to your datasets and test with the command:
 ```
+# x2
+python basicsr/test.py -opt ../options/test/test_x2.yml
+# x4
 python basicsr/test.py -opt ../options/test/test_x4.yml
 ```
+
+✨ Results
+---
+TBD
+
 
 💖 Acknowledgments
 ---
