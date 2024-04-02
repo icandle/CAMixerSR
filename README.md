@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 *Training*: [lau dataset](https://drive.google.com/file/d/1FjEzVh7-0swloClKCVnctUS8Wmlz3Ibv/view?usp=drive_link).
 
-*Preparing*: Please refer to the [Step 1&2&3](https://github.com/Fanghua-Yu/OSRT) of OSRT.
+*Preparing*: Please refer to the [Step 1&2&3](https://github.com/Fanghua-Yu/OSRT?tab=readme-ov-file#data-preparation) of OSRT.
 
 ▶️ How to Test
 ---
