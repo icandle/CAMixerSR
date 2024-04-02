@@ -49,9 +49,13 @@ pip install -r requirements.txt
 
 *Testing*: Set5, Set14, BSD100, Urban100, Manga109 ([Google Drive](https://drive.google.com/file/d/1SbdbpUZwWYDIEhvxQQaRsokySkcYJ8dq/view?usp=sharing)/[Baidu Netdisk](https://pan.baidu.com/s/1zfmkFK3liwNpW4NtPnWbrw?pwd=nbjl)).
 
+*Preparing*: Please refer to the [Dataset Preparation](https://github.com/XPixelGroup/BasicSR/blob/master/docs/DatasetPreparation.md) of BasicSR.
+
 #### Omni-Directional-Image SR
 
 *Training*: [lau dataset](https://drive.google.com/file/d/1FjEzVh7-0swloClKCVnctUS8Wmlz3Ibv/view?usp=drive_link).
+
+*Preparing*: Please refer to the [Step 1&2&3](https://github.com/Fanghua-Yu/OSRT) of OSRT.
 
 ▶️ How to Test
 ---
@@ -86,7 +90,7 @@ TBD
 
 💖 Acknowledgments
 ---
-We would thank *[BasicSR](https://github.com/XPixelGroup/BasicSR)*, *[ClassSR](https://github.com/XPixelGroup/ClassSR)*, and *[OSRT](https://github.com/Fanghua-Yu/OSRT)* for their enlightening work!
+We would thank [BasicSR](https://github.com/XPixelGroup/BasicSR), [ClassSR](https://github.com/XPixelGroup/ClassSR), and [OSRT](https://github.com/Fanghua-Yu/OSRT) for their enlightening work!
 
 🎓 Citation
 ---
