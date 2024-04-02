@@ -18,6 +18,8 @@ class="center">
 
 This repository contains [PyTorch](https://pytorch.org/) implementation for ***CAMixerSR*** (CVPR 2024).
 
+1. [Requirements](#%EF%B8%8F-requirements)
+2. [Datasets](#-datasets)
 ---
 
 The main codes and pre-trained models have been uploaded. We are planning to replenish the README of CAMixerSR in a few weeks.
