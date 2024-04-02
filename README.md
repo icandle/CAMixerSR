@@ -25,8 +25,6 @@ This repository contains [PyTorch](https://pytorch.org/) implementation for ***C
 5. [Acknowledgments](#-acknowledgments)
 6. [Citation](#-citation)
 ---
-
-The main codes and pre-trained models have been uploaded. We are planning to replenish the README of CAMixerSR in a few weeks.
  
 ⚙️ Requirements
 ---
@@ -74,9 +72,9 @@ cd codes
 *Testing*: Change the dataset path of [example option](https://github.com/icandle/CAMixerSR/blob/main/codes/options/test/test_2K.yml) to your datasets and test with the command:
 ```
 # 2K
-python basicsr/test.py -opt ../options/test/test_2K.yml
+python basicsr/test.py -opt options/test/test_2K.yml
 # 4K/8K
-python basicsr/test.py -opt ../options/test/test_8K.yml
+python basicsr/test.py -opt options/test/test_8K.yml
 ```
 *Note*: We use [TileModel](https://github.com/icandle/CAMixerSR/blob/main/codes/basicsr/models/Tile_model.py) with *Tile* 64x64 and *Overlap* 4 to constrain the calculations.
 
@@ -84,9 +82,9 @@ python basicsr/test.py -opt ../options/test/test_8K.yml
 *Testing*: Change the dataset path of [example option](https://github.com/icandle/CAMixerSR/blob/main/codes/options/test/test_x4.yml) to your datasets and test with the command:
 ```
 # x2
-python basicsr/test.py -opt ../options/test/test_x2.yml
+python basicsr/test.py -opt options/test/test_x2.yml
 # x4
-python basicsr/test.py -opt ../options/test/test_x4.yml
+python basicsr/test.py -opt options/test/test_x4.yml
 ```
 
 ✨ Results
