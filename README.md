@@ -94,8 +94,10 @@ python basicsr/test.py -opt ../options/test/test_x4.yml
 <details>
 <summary>Visual comparison (click me)</summary>
 <p align="center">
+    
 [<img src="./figures/visual.png" width=100% height=100% 
 class="center">](https://imgsli.com/MjUyMzE3)
+
 </p>
 </details>
 
