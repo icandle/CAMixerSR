@@ -1,5 +1,12 @@
 ## <div align="center"> <i>CAMixerSR</i>: Only Details Need More “Attention” </div>
 
+<div align="center"> 
+
+[Yan Wang](https://scholar.google.com/citations?user=SXIehvoAAAAJ&hl=en)<sup>1,2</sup>, Yi Liu<sup>1\*</sup>, Shijie Zhao<sup>1\*†</sup>, [Junlin Li](https://scholar.google.com/citations?user=daHqpg8AAAAJ&hl=en&oi=ao)<sup>1</sup>, [Li Zhang](https://scholar.google.com/citations?hl=en&user=8G5-2OMAAAAJ)<sup>1</sup> 
+</div>
+
+<p align="center"> <sup>1</sup>ByteDance, <sup>2</sup>Nankai University </p>
+
 <p align="center">
 <a href="https://arxiv.org/abs/2402.19289" alt="arXiv">
     <img src="https://img.shields.io/badge/arXiv-2402.19289-b31b1b.svg?style=flat" /></a>
@@ -16,14 +23,21 @@
 class="center">
 </p>
 
-This repository contains [PyTorch](https://pytorch.org/) implementation for ***CAMixerSR*** (CVPR 2024):
-
+This repository contains [PyTorch](https://pytorch.org/) implementation for ***CAMixerSR*** (CVPR 2024).
+<details> <summary>Table of contents</summary>
+<p align="center">
+    
 1. [Requirements](#%EF%B8%8F-requirements)
 2. [Datasets](#-datasets)
 3. [Test](#%EF%B8%8F-how-to-test)
 4. [Results](#-results)
 5. [Acknowledgments](#-acknowledgments)
 6. [Citation](#-citation)
+
+</p>
+ 
+</details> 
+
 ---
  
 ⚙️ Requirements
