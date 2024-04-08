@@ -1,3 +1,3 @@
 einops
-torch==2.0.1
+torch==2.1.1
 basicsr==1.4.2
