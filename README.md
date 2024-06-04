@@ -11,7 +11,7 @@
 <a href="https://arxiv.org/abs/2402.19289" alt="arXiv">
     <img src="https://img.shields.io/badge/arXiv-2402.19289-b31b1b.svg?style=flat" /></a>
 <a href="https://github.com/icandle/CAMixerSR/blob/main/LICENSE" alt="license">
-    <img src="https://img.shields.io/badge/license-Apache--2.0-DAA520" /></a>
+    <img src="https://img.shields.io/badge/license-Apache--2.0-%23B7A800" /></a>
 <a href="https://colab.research.google.com/gist/icandle/404a89adbc264294dd77edacfd80f3b2/camixersr.ipynb" alt="Colab">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
 <a href="https://drive.google.com/drive/folders/1wgSshZn8FZwuLtQcN9IoUY8XI4gBBxjs?usp=sharing">
